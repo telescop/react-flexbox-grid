@@ -2,7 +2,7 @@
   "name": "react-flexbox-grid",
   "description": "A set of React components implementing flexboxgrid with the power of CSS Modules",
   "homepage": "https://github.com/roylee0704/react-flexbox-grid",
-  "version": "2.1.2",
+  "version": "2.1.2-ts",
   "main": "lib/index.js",
   "author": {
     "email": "roylee0704@gmail.com",
@@ -54,16 +54,16 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^2.0.3",
     "mocha": "^3.1.2",
-    "node-sass": "^3.4.2",
+    "node-sass": "^4.14.0",
     "phantomjs-prebuilt": "^2.1.14",
     "postcss-loader": "^0.7.0",
-    "react": "^15.5.4",
-    "react-addons-test-utils": "^15.5.1",
-    "react-dom": "^15.5.4",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "react-hot-loader": "^1.3.0",
+    "react-test-renderer": "^17.0.0",
     "redbox-react": "^1.1.1",
     "rimraf": "^2.4.4",
-    "sass-loader": "^3.1.2",
+    "sass-loader": "^4.0.0",
     "style-loader": "^0.12.3",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
@@ -79,7 +79,7 @@
     "lint": "eslint src test",
     "patch": "bumped release patch",
     "prebuild": "npm run clean",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "release": "bumped release",
     "start": "cross-env NODE_ENV=development UV_THREADPOOL_SIZE=100 node ./server",
     "test": "cross-env NODE_ENV=test karma start",
@@ -87,7 +87,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "react": "^0.14.3 || ^15.5.4 || ^16.0.0 || ^17.0.0"
+    "react": "^17.0.0"
   },
   "types": "react-flexbox-grid.d.ts"
 }

@@ -1,10 +1,10 @@
 import expect from 'expect';
 import React from 'react';
-import TestUtils from 'react-addons-test-utils';
+import { createRenderer } from 'react-test-renderer/shallow';
 import Grid from '../../src/components/Grid';
 import style from 'flexboxgrid2';
 
-const renderer = TestUtils.createRenderer();
+const renderer = createRenderer();
 
 describe('Grid', () => {
   it('Should add "container" class', () => {

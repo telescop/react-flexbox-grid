@@ -1,10 +1,10 @@
 import expect from 'expect';
 import React from 'react';
-import TestUtils from 'react-addons-test-utils';
+import { createRenderer } from 'react-test-renderer/shallow';
 import Row, { getRowProps } from '../../src/components/Row';
 import style from 'flexboxgrid2';
 
-const renderer = TestUtils.createRenderer();
+const renderer = createRenderer();
 
 describe('Row', () => {
   it('Should add "row" class', () => {

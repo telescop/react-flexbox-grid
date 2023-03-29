@@ -1,10 +1,10 @@
 import expect from 'expect';
 import React from 'react';
-import TestUtils from 'react-addons-test-utils';
+import { createRenderer } from 'react-test-renderer/shallow';
 import Col, { getColumnProps } from '../../src/components/Col';
 import style from 'flexboxgrid2';
 
-const renderer = TestUtils.createRenderer();
+const renderer = createRenderer();
 
 describe('Col', () => {
   it('Should add classes equals to props', () => {
